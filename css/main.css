@@ -1,0 +1,196 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+/*********** منوی بالای هواپیما */
+div.pre-header{
+    background-color: rgb(255, 255, 255);
+    direction: rtl;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow:  0 2px 5px -1px rgba(0, 0, 0, .08);
+    will-change: transform;
+    transition: transform .2s ease-out;
+    z-index:999;
+
+}
+
+div.pre-header>div.main-header{
+    /* align-items: center; */
+    margin: 3px auto;
+    max-width: 1450px;
+    display: flex;
+    justify-content: space-between;   
+    
+}
+
+
+/* لوگو و منوی سمت راست  */
+div.pre-header>div.main-header>nav{
+    
+
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    line-height: 4rem;
+    padding: 0px 10px ;
+    color:rgb(86,92,99) ;
+    
+}
+
+div.pre-header>div.main-header>nav>ul.meun_left{
+    
+    display: flex;
+    line-height: 2rem;
+    margin-right: 25px;
+    /* padding: 10px 5px;  */
+    height: 3rem;
+    
+}
+div.pre-header>div.main-header>nav>ul.meun_left>li{
+    
+    padding: 4px 16px;
+    list-style: none;
+    height: inherit;
+    
+
+}
+
+div.pre-header>div.main-header>nav>ul.meun_left>li>button.buttom_menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    line-height: 3rem;
+    align-items: center;
+    width: 69px;
+}
+
+div.pre-header>div.main-header>nav>ul.meun_left>li>button.toor{
+    justify-content:center;
+    width: 20px;
+}
+
+div.pre-header>div.main-header>nav>ul.meun_left>li.khat{
+    border-left: 1px solid rgb(224,224,224);
+    margin-top: 15px;
+    height: 60%;
+    padding: 0px;
+}
+
+div.pre-header>div.main-header>nav>ul.meun_left>li>a.buttom_menu>img{
+    padding-right: 7px;
+}
+
+
+/* منوی سمت چپ */
+
+
+div.pre-header>div.main-header>ul.meun_left{
+    
+    display: flex;
+    line-height: 2rem;
+    margin-right: 25px;
+    /* padding: 10px 5px;  */
+    height: 3rem;
+    
+}
+
+
+div.pre-header>div.main-header>ul.meun_left>li{
+    
+    padding: 4px 16px;
+    list-style: none;
+    height: inherit;
+    
+
+}
+
+div.pre-header>div.main-header>ul.meun_left>li>button.buttom_menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    line-height: 3rem;
+    align-items: center;
+    
+    
+}
+
+
+
+
+ /* پایان منوی بالای عکس هواپیما */
+/************ عکس هواپیما  */
+
+div.photo_header{
+    position: relative;
+    background-color: #fff;
+    height: 320px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 4rem;  
+    
+}
+
+div.photo_header >img{
+    position: relative;
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    height: inherit;
+    
+}
+
+/*قسمت سرچ بار   */
+
+div.search{
+    max-width: 1200px;
+    height: 262px;
+    border: 1px solid rgb(232,232,232);
+    border-radius: 8px;
+    margin: -28px auto;
+    background: #fdfdfd;
+    position: relative;
+    padding-top: 8px;
+}
+
+div.search>div.container{
+    margin: 0 auto;
+    width: 100%;
+    border-bottom:1px solid rgb(232,232,232);
+}
+div.search>div.container>div.radif_one{
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    padding:2px 35px;
+    
+}
+
+div.search>div.container>div.radif_one>div.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.search>div.container>div.radif_one>div.item>img{
+    align-self: center;
+    width: 36px;
+    color: rgb(255, 255, 255);
+}

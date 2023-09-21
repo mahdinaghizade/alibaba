@@ -1,0 +1,37 @@
+@font-face {
+    font-family:Hasanbaba-Regular ;
+    src: url(./webfonts/Epic\ Hasanbaba-Regular.woff);
+}
+@font-face {
+    font-family:Hasanbaba-Thin ;
+    src: url(./webfonts/Epic\ Hasanbaba-Thin.woff);
+}
+
+@font-face {
+    font-family:Hasanbaba-Bold ;
+    src: url(./webfonts/Epic\ Hasanbaba-Bold.woff);
+}
+
+@font-face {
+    font-family:num-Bold ;
+    src: url(./webfonts/KalamehWeb\(FaNum\)-Black.woff);
+}
+
+@font-face {
+    font-family:num-light ;
+    src: url(./webfonts/KalamehWeb\(FaNum\)-Light.woff);
+}
+
+span{
+    font-family:Hasanbaba-Regular; 
+    font-size: 16px;
+    font-weight: 590;
+    color:rgb(102,108,114) ;
+}
+a{
+    font-family:Hasanbaba-Regular; 
+    font-size: 16px;
+    font-weight: 590;
+    color:rgb(102,108,114) ;
+    text-decoration: none;
+}
