@@ -62,6 +62,8 @@ div.pre-header>div.main-header>nav>ul.meun_left>li{
     padding: 4px 16px;
     list-style: none;
     height: inherit;
+    position: relative; 
+    display: inline-block; 
     
 
 }
@@ -74,6 +76,12 @@ div.pre-header>div.main-header>nav>ul.meun_left>li>button.buttom_menu{
     line-height: 3rem;
     align-items: center;
     width: 69px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+div.pre-header>div.main-header>nav>ul.meun_left>li>button.buttom_menu:hover{
+    background-color: rgba(245, 242, 242, 0.541);
 }
 
 div.pre-header>div.main-header>nav>ul.meun_left>li>button.toor{
@@ -92,6 +100,36 @@ div.pre-header>div.main-header>nav>ul.meun_left>li>a.buttom_menu>img{
     padding-right: 7px;
 }
 
+/* کد های ابشاری زیر منو  */
+
+ div.pre-header>div.main-header>nav>ul.meun_left>li>button.buttom_menu>div{
+    list-style: none;
+    display: none;
+    position: absolute; 
+    min-width:120px; 
+    top: calc(4rem - 5px);
+    text-align: right;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .12), 0 10px 10px -6px rgba(0, 0, 0, .12);
+    line-height: 25px;
+    padding: 0px 10px;
+    background-color: #ffffff; 
+    
+    
+    
+            }
+div.pre-header>div.main-header>nav>ul.meun_left>li>button.buttom_menu>div>li{
+                font-family:Hasanbaba-Regular; 
+                background-color: #ffffff; 
+                color: rgb(109, 108, 108); 
+                padding: 10px; 
+                border-bottom: 1px solid rgb(224,224,224);
+                cursor: pointer;
+}
+
+div.pre-header>div.main-header>nav>ul.meun_left>li>button.buttom_menu>div>li:hover{
+    background-color: rgba(245, 242, 242, 0.541);
+}
+                
 
 /* منوی سمت چپ */
 
@@ -103,7 +141,7 @@ div.pre-header>div.main-header>ul.meun_left{
     margin-right: 25px;
     /* padding: 10px 5px;  */
     height: 3rem;
-    
+     
 }
 
 
@@ -113,9 +151,9 @@ div.pre-header>div.main-header>ul.meun_left>li{
     list-style: none;
     height: inherit;
     
+    
 
 }
-
 div.pre-header>div.main-header>ul.meun_left>li>button.buttom_menu{
     display: flex;
     justify-content: space-between;
@@ -123,8 +161,11 @@ div.pre-header>div.main-header>ul.meun_left>li>button.buttom_menu{
     border: none;
     line-height: 3rem;
     align-items: center;
-    
-    
+    cursor: pointer;
+    border-radius: 15px;
+}
+div.pre-header>div.main-header>ul.meun_left>li>button.buttom_menu:hover{
+    background-color: rgba(245, 242, 242, 0.541);
 }
 
 
