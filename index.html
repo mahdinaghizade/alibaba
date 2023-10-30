@@ -1,94 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="" id="darkmode">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./swiper copy/swiper-bundle.min.css">
 
     <title>Document</title>
 </head>
-<body>
+<body class=" dark:bg-slate-500" >
 
+
+
+
+    <div class="md:hidden fixed top-0 right-0 h-[76px] bg-[#FDB713] w-[100%] z-30 flex justify-center ">
+        <img class="w-[125px] h-[20px] self-center" src="./media/موبایل لوگو علی_بابا.svg" alt="">
+    </div>
+
+    <div id="shekl_two" class="hidden flex fixed flex-row  top-[60px] w-[90%] justify-between bg-white z-50 right-[20px] px-[20px] py-[5px] dark:bg-slate-600 md:hidden">
+        <img class="w-[28px] h-[28px]" src="./media/svgexport-1.png" alt="">
+        <img src="./media/svgexport-2.png" alt="">
+        <img class="w-[28px] h-[28px]" src="./media/svgexport-3.png" alt="">
+        <img class="w-[28px] h-[28px]" src="./media/svgexport-4.png" alt="">
+        <img class="w-[28px] h-[28px]" src="./media/svgexport-5.png" alt="">
+        <img class="w-[28px] h-[28px]" src="./media/svgexport-6.png" alt="">
+    </div>
+    <div id="shekl_one" class="md:hidden relative top-[76px] right-0 h-[76px] bg-[#FDB713] w-[100%]  flex justify-center " >
+       
+        <div class="absolute bg-white w-[90%] h-[150px]  menu_mobile dark:bg-slate-600">
+
+
+            <div class="radif_menu_mobile w-[100%] h-[50px] flex flex-row-reverse justify-around">
+                <div class="rast flex flex-row-reverse align-middle w-[50%] px-[16px]" >
+                    <img class="w-[28px] h-[28px]" src="./media/svgexport-1.png" alt="">
+                    <p class="text-center text-black text-base  mr-[6px] dark:text-white">پرواز</p>
+                </div>
+                <div class="chap flex flex-row-reverse w-[50%] px-[16px]">
+                    <img src="./media/svgexport-2.png" alt="">
+                    <p class="text-center text-black text-base  mr-[6px] dark:text-white" >قطار</p>
+                </div>
+            </div>
+            <div class="radif_menu_mobile w-[100%] h-[50px] flex flex-row-reverse justify-around">
+
+
+
+                <div class="rast flex flex-row-reverse align-middle w-[50%] px-[16px]" >
+                    <img class="w-[28px] h-[28px]" src="./media/svgexport-3.png" alt="">
+                    <p class="text-center text-black text-base  mr-[6px] dark:text-white">اتوبوس</p>
+                </div>
+                <div class="chap flex flex-row-reverse w-[50%] px-[16px]">
+                    <img src="./media/svgexport-4.png" alt="">
+                    <p class="text-center text-black text-base  mr-[6px] dark:text-white" >هتل</p>
+                </div>
+
+                
+
+
+            </div>
+            <div class=" w-[100%] h-[50px] flex flex-row-reverse justify-around">
+
+
+
+                <div class="rast flex flex-row-reverse align-middle w-[50%] px-[16px]" >
+                    <img class="w-[28px] h-[28px]" src="./media/svgexport-5.png" alt="">
+                    <p class="text-center text-black text-base  mr-[6px] dark:text-white">تور</p>
+                </div>
+                <div class="chap flex flex-row-reverse w-[50%] px-[16px]">
+                    <img src="./media/svgexport-6.png" alt="">
+                    <p class="text-center text-black text-base  mr-[6px] dark:text-white" >ویلا و اقامتگاه</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 <!-- قسمت بالایی عکس هواپیما منو -->
-    
-    <div class="pre-header">
+    <div class="mobile">
+    <div class="hidden pre-header dark:md:bg-slate-600 dark:md:text-white md:block">
         <div class="main-header">
             <nav>
                 <img src="./media/لوگوی علی بابا.svg" alt="">
                 <ul class="meun_left">
                     <li > 
+                        <div class="dropdown ">
+                            <button onclick="myFunction()" class="dropbtn dark:text-white align-middle rounded-lg hover:bg-slate-400">بلیط</button>
+                            <div id="myDropdown" class="dropdown-content dark:bg-slate-500">
+                              <a class="dark:text-white dark:bg-slate-500 dark:hover:bg-slate-400"  href="#home">پرواز داخلی</a>
+                              <a class="dark:text-white dark:bg-slate-500 dark:hover:bg-slate-400" href="#about">پرواز خارجی</a>
+                              <a class="dark:text-white dark:bg-slate-500 dark:hover:bg-slate-400" href="#contact">قطار</a>
+                              <a class="dark:text-white dark:bg-slate-500 dark:hover:bg-slate-400" href="#contact">اتوبوس</a>
 
-                        <button  class="buttom_menu " onclick="show_hide() ">
-                            <span >بلیط</span>
-                            <div id="list-items"> 
-                                <li  href="#"> پرواز داخلی </li> 
-                                <li href="#"> پرواز خارجی </li> 
-                                <li  href="#"> قطار </li> 
-                                <li  href="#"> اتوبوس </li> 
-                            </div> 
+                            </div>
+                          </div> 
+                          <div class="ax">
+                          <img class="dark:md:text-white" src="./media/arro-down.svg" alt="">
+                        </div>
                             
-                            <img src="./media/arro-down.svg" alt="">
                         </button>
 
                     </li>
                         <li class="khat"></li>
                     <li> 
-
-                        <button  class="buttom_menu" onclick="show_hide2()">
-                            <span>اقامت</span>
-                            <div id="list-items2"> 
-                                <li  href="#"> هتل</li> 
-                                <li href="#">ویلا و اقامتگاه</li> 
+                        <div class="dropdown dark:md:bg-slate-600">
+                            <button onclick="myFunction2()" class="dropbtn dark:md:text-white align-middle  rounded-lg hover:bg-slate-400">اقامت</button>
+                            <div id="myDropdown2" class="dropdown-content dark:md:bg-slate-500 dark:md:text-white ">
+                              <a href="#home">هتل</a>
+                              <a href="#about">اقامتگاه</a>
+                              
                             </div>
+                          </div> 
+                          <div class="ax">
                             <img src="./media/arro-down.svg" alt="">
+                          </div>
+                            
+                        </button>
+
+                    </li>
+                    <li class="khat"></li>
+                    <li>
+
+                        <button  class="buttom_menu toor dark:md:bg-slate-600  ">
+                            <p class="dark:md:bg-slate-600 dark:md:text-white md:rounded-lg md:hover:bg-slate-400">تور</p>
                         </button> 
 
                     </li>
                     <li class="khat"></li>
                     <li>
 
-                        <button  class="buttom_menu toor">
-                            <span>تور</span>
-                        </button> 
-
-                    </li>
-                    <li class="khat"></li>
-                    <li>
-
-                        <button id="more" class="buttom_menu" onclick="show_hide3()">
-                            <span>بیشتر</span>
-                            <div id="list-items3"> 
-                                <li  href="#"> علی بابا پلاس </li> 
-                                <li href="#"> مجله علی بابا  </li> 
-                                <li  href="#"> بیمه مسافرتی </li> 
-                                
-                            </div> 
+                        <div class="dropdown">
+                            <button onclick="myFunction3()" class="dropbtn md:align-middle dark:md:text-white dark:md:rounded-lg ">بیشتر</button>
+                            <div id="myDropdown3" class="dropdown-content dark:md:bg-slate-500 dark:md:text-white  ">
+                              <a class="md:text-sm" href="#home">علی بابا پلاس</a>
+                              <a class="md:text-sm" href="#about">محله علی بابا</a>
+                              <a class="md:text-sm" href="#contact">بیمه مسافرتی</a>
+                            </div>
+                          </div> 
+                          <div class="ax">
                             <img src="./media/arro-down.svg" alt="">
-                        </button> 
+                          </div>
+                            
+                        </button>
 
                     </li>
                 </ul>
             </nav>
 
 
-            <ul class="meun_left">
-                <li>
+            <ul class="meun_left dark:md:bg-slate-600 ">
+                <li class="dark:md:bg-slate-600 ">
                     
-                    <button class="buttom_menu">
-                        <img style="margin-left: 5px;" src="./media/علامت سوال.svg" alt="">
-                        <span>مرکز پشتیبانی آنلاین</span>
+                    <button class="buttom_menu dark:md:bg-slate-600 ">
+                        <img class="" style="margin-left: 5px;" src="./media/علامت سوال.svg" alt="">
+                        <span class="dark:md:bg-slate-600 dark:md:text-white ">مرکز پشتیبانی آنلاین</span>
                     </button> 
                 </li>
 
-                <li>
+                <li class="dark:md:bg-slate-600">
                     
-                    <button class="buttom_menu">
+                    <button class="buttom_menu dark:md:bg-slate-600">
                         <img src="./media/چمدون.svg" alt="">
-                        <span>سفرهای من</span>
+                        <span class="dark:md:bg-slate-600 dark:md:text-white">سفرهای من</span>
                     </button> 
 
                 </li>
@@ -96,7 +172,7 @@
                     
                     <button class="buttom_menu">
                         <img style="margin-left: 5px;" src="./media/شخص.svg" alt="">
-                        <span>ورود یا ثبت نام</span>
+                        <span class="dark:md:bg-slate-600 dark:md:text-white">ورود یا ثبت نام</span>
                         
                     </button> 
 
@@ -110,57 +186,498 @@
     </div>
  <!-- عکس هدر  -->
 
-    <div class="photo_header">
+    <div class="photo_header dark:md:bg-slate-500 hidden md:block">
             <img src="./media/hero-e1fa22fb.webp" alt="">
     </div>
 
 <!-- قسمت سومی که جست و جو داره  -->
 
-    <div class="search">
-            <div class="container">
-                <div class="radif_one">
-                    <div class="item">
+    <div class="search  dark:md:bg-slate-400  hidden md:block">
+            <div class="container ">
+                <div class="radif_one ">
+                    <div class="item md:text-center">
                         <img src="./media/ویلا و اقامتگاه.png" alt="">
-                        <a href="">ویلا و اقامتگاه</a>
+                        <a  href="">ویلا و اقامتگاه</a>
                     </div>
-                    <div class="item">
+                    <div class="item md:text-center">
                         <img src="./media/هتل.png" alt="">
                         <a href="">هتل</a>
                     </div>
-                    <div class="item">
+                    <div class="item md:text-center">
                         <img src="./media/تور.png" alt="">
                         <a href="">تور</a>
                     </div>
-                    <div class="item">
+                    <div class="item md:text-center">
                         <img src="./media/اتوبوس.png" alt="">
                         <a href="">اتوبوس</a>
                     </div>
-                    <div class="item">
+                    <div class="item md:text-center">
                         <img src="./media/قطار.png" alt="">
                         <a href="">قطار</a>
                     </div>
-                    <div class="item">
+                    <div class="item md:text-center">
                         <img src="./media/خارجی.png" alt="">
                         <a href="">پروازداخلی</a>
                     </div>
-                    <div class="item">
+                    <div class="item md:text-center">
                         <img src="./media/سفرداخلی.png" alt="">
                         <a href="">پروازداخلی</a>
                     </div>
                 </div>
             </div>
-        <div class="radif_two">
+        <div class="radif_two dark:md:bg-slate-600 ">
+
+
+
+
+            <div   class="dropdown mamad  flex md:justify-around md:mt-[25px] md:w-[120px] md:flex-row-reverse md:rounded-3xl md:border md:border-[#ECECEC] md:px-[10px]  dark:md:bg-slate-500">
+                <button  onclick="myFunction4()" class="dropbtn dark:text-white align-middle ">یک طرفه</button>
+                <div id="myDropdown4" class="dropdown-content dark:md:bg-slate-500">
+                  <a class="dark:md:text-white dark:md:bg-slate-500 dark:md:hover:bg-slate-400"  href="#home"> یک طرفه</a>
+                  <a class="dark:md:text-white dark:md:bg-slate-500 dark:md:hover:bg-slate-400" href="#about">رفت‌وبرگشت</a>
+                </div>
+                <div class="ax">
+                    <img onclick="myFunction4()" class="dark:md:text-white" src="./media/arro-down.svg" alt="">
+                  </div>
+              </div> 
+
+
+
+
+
 
         </div>
 
-        <div class="radif_three">
+        <div class="radif_three flex md:flex-row-reverse  md:justify-around dark:md:bg-slate-600 md:align-middle">
+
+
+
+            <div class="avaly flex">
+                <input class="mabda h-[48px] dark:text-white dark:bg-slate-500 dark:placeholder:text-white" placeholder="مبدا(شهر)"></input>
+                <input class="maghsad md:h-[48px] dark:md:text-white dark:md:bg-slate-500 dark:md:placeholder:text-white" placeholder="مقصد(شهر)"></input>
+            </div>
+
+
+            <div class="dovvom flex md:flex-row-reverse">
+                <input class="raft  h-[48px] dark:text-white dark:bg-slate-500 dark:placeholder:text-white" placeholder="تاریخ رفت "> </input>
+                <input class="bargasht md:h-[48px] dark:md:text-white dark:md:bg-slate-500 dark:md:placeholder:text-white" placeholder="تاریخ برگشت ">    </input>
+            </div>
+
+
+
+            <div class="md:w-[18%] tedad sevvom md:h-[48px] dark:md:text-white dark:md:bg-slate-500">مسافر</div>
+            <button class=" btn-search">جستجو</button>
+
 
         </div>
+    </div>
+    
+
+    <div class="hh3 md:max-w-[1450px] md:mx-auto dark:md:text-white mt-[180px] md:mt-[72px]">
+    <h2 class=" md:mt-[72px] mx-[15px] dark:text-white">  سایر خدمات علی بابا</h2>
+    </div>
+
+
+
+    <!-- سه پارامتر پایین سایر هدمات علی بابا -->
+    <div class="flex flex-row-reverse my-[25px] w-[80%] md:flex-row justify-between mx-auto md:flex-row md:max-w-[1450px] md:mt-[20px] md:mx-auto ali md:justify-between">
+
+
+    <div class="md:cursor-pointer item1 md:w-[33%] md:px-[12px] md:py-[8px] flex md:flex-row md:justify-between md:bg-white dark:md:bg-slate-400 md:align-middle md:h-[78px] hasan ">
+        <div class="flex md:flex-row md:px-[10px] flex-col">
+            <img class="md:w-[48px] w-[56px] h-[56px] hasan_sm mx-auto md:h-[48px] md:my-auto" src="./media/اولی.svg" alt="">
+            <p class="dark:md:text-white md:self-center md:px-[5px]  my-[3px]  dark:text-white">بیمه مسافرتی</p>
+         </div>
+        <img class="md:w-[16px] md:h-[16px] md:ml-[10px] md:self-center hidden md:block" src="./media/فلش چپ.svg" alt="">
+    </div>
+
+
+    <div class="md:cursor-pointer item1 md:w-[33%] md:px-[12px] md:py-[8px] flex md:flex-row md:justify-between md:bg-white dark:md:bg-slate-400 md:align-middle md:h-[78px] hasan ">
+        <div class="flex md:flex-row px-[10px] flex-col text-center">
+            <img class="md:w-[48px] md:h-[48px] w-[56px] hasan_sm h-[56px] mx-auto md:my-auto" src="./media/سومی.svg" alt="">
+            <p class="dark:text-white self-center px-[5px]  my-[3px]">ویزای سفر </p>
+         </div>
+        <img class="md:w-[16px] md:h-[16px] md:ml-[10px] md:self-center hidden md:block" src="./media/فلش چپ.svg" alt="">
+    </div>
+
+
+
+    <div class=" md:w-[33%] md:px-[12px] md:py-[8px] flex md:flex-row md:justify-between md:bg-white dark:md:bg-slate-400 md:align-middle md:h-[78px] hasan md:cursor-pointer">
+        <div class="flex md:flex-row md:px-[10px] flex-col text-center ">
+            <img class="md:w-[48px] md:h-[48px] w-[56px] h-[56px] hasan_sm mx-auto md:my-auto" src="./media/دومی.svg" alt="">
+            <p class="dark:md:text-white md:self-center md:px-[5px] my-[3px]  dark:text-white"> تور گروهی</p>
+         </div>
+        <img class="md:w-[16px] md:h-[16px] md:ml-[10px] md:self-center hidden md:block" src="./media/فلش چپ.svg" alt="">
+    </div>
+</div>
+
+
+
+
+<div class="swiper mySwiper slider md:max-w-[1450px] ">
+    <div class="swiper-wrapper hidden">
+      <div class="swiper-slide rounded-lg"><img class="rounded-lg" src="./media/5.png" alt=""></div>
+      <div class="swiper-slide rounded-lg"><img class="rounded-lg" src="./media/2.png" alt=""></div>
+      <div class="swiper-slide rounded-lg"><img class="rounded-lg" src="./media/3.jpg" alt=""></div>
+      <div class="swiper-slide rounded-lg"><img class="rounded-lg"  src="./media/4.png" alt=""></div>
+      <div class="swiper-slide rounded-lg"><img class="rounded-lg" src="./media/1.jpg" alt=""></div>
+    </div>
+    <div class="swiper-pagination hidden"></div>
+  </div>
+
+
+  <div class="w-[95%] scro mx-auto">
+  <div class="swiper2 mySwiper2 slider ">
+    <div class="swiper-wrapper ">
+      
+      <div class="swiper-slide rounded-lg"><img class="rounded-lg" src="./media/mb1.png" alt=""></div>
+      <div class="swiper-slide rounded-lg"><img class="rounded-lg" src="./media/mbs2.png" alt=""></div>
+      <div class="swiper-slide rounded-lg"><img class="rounded-lg"  src="./media/mbs3.jpg" alt=""></div>
+      <div class="swiper-slide rounded-lg"><img class="rounded-lg" src="./media/mbs4.png" alt=""></div>
+    </div>
+    <div class="swiper-pagination hidden"></div>
+  </div>
+</div>
+
+
+
+
+  <!-- banner -->
+  <div class="flex flex-row max-w-[382px] md:max-w-[1450px] md:mx-auto baner md:h-[303px] md:justify-center md:px-[64px] md:py-[8px] dark:md:bg-slate-400 pt-[12px] px-[12px] justify-between">
+        <div class="md:self-center">
+            <img class="md:ml-[64px] hidden md:block" src="./media/qrcode.png" alt="">
+        </div>
+
+        <div class="md:w-[448px] pl-[16px] h-[125px] eybaba ">
+            <br class="hidden md:block">
+            <br class="hidden md:block">
+            <h1 class="md:text-2xl my-[14px]  dark:text-white">اپلیکیشن علی بابا</h1><br>
+            <p class="md:hidden  dark:text-white">همه سفرها در جیب شما</p>
+            <button class="md:hidden bg-blue-500  btnapp font-light hover:bg-blue-700 text-white font-bold py-[4px] px-[16px] rounded-3xl my-[16px] h-[33px]  dark:bg-black ">راهنمای نصب</button>
+            <p class="hidden md:block md:text-2xl">سریع تر و مطمعئن تر به سفر بروید</p>
+            <br class="hidden md:block">
+            <div class="flex md:flex-row md:py-[24px]"> 
+                <a class="md:text-blue-600 hidden md:block" href="#">مشاهده لینک های دانلود</a>
+                <img class="md:mr-[25px] hidden md:block" src="./media/فلش چپ.png" alt="">
+            </div>
+            <div class="md:flex md:flex-row md:align-middle ">
+                <img class="md:w-[20px] md:h-[20px] md:self-center hidden md:block" src="./media/android.png" alt="">
+                <img class="md:w-[20px] md:h-[20px] md:self-center md:mr-[5px] hidden md:block" src="./media/apple.png" alt="">
+                <span class="md:text-[12px] md:self-center md:mr-[15px] hidden md:block ">  قابلیت نصب روی اندروید و اپل</span>
+            </div>
+
+        </div>
+    
+        <div class="">
+            <img class="md:h-[294px] md:w-[334px] w-[140px] h-[118]" src="./media/baner.webp" alt="">
+        </div>
+  </div>
+
+<div class="md:mx-auto md:max-w-[1450px] md:text-right md:mt-[30px]">
+<h1 class="md:text-[28px] dark:md:text-white text-[21px] mt-[32px] mb-[16px] text-right  dark:text-white">پرسش های شما</h1>
+</div>
+  <!-- accordeon -->
+
+<div class="acc dark:bg-slate-800 dark:text-white md:max-w-[1450px] ">
+  <button class="accordion flex  dark:hover:bg-slate-600 brder  dark:text-white"><img class=" quest" src="./media/svgexport-17.png" alt=""> چند روز قبل از پرواز، بلیط هواپیما را بخریم؟ </button>
+<div class="panel">
+  <p class="text-sm  dark:text-white">امکان رزرو بلیط هواپیما از ماه‌ها قبل وجود دارد. اما گاهی اوقات قیمت بلیط هواپیما در روزهای نزدیک به پرواز ارزان‌تر می‌شود. بنابراین در صورتی که شرایطتان اجازه می‌دهد، رزرو آنلاین بلیط هواپیما را به روزهای نزدیک پرواز موکول کنید. البته اگر قصد سفر در ایام پرسفر نظیر تعطیلات را دارید، باید هر چه زودتر رزرو بلیط هواپیما را انجام دهید.</p>
+</div>
+
+
+
+
+<button class="brder accordion flex dark:hover:bg-slate-600  dark:text-white"><img class=" quest" src="./media/svgexport-17.png" alt=""> در هر پرواز، میزان بار مجاز چقدر است؟</button>
+<div class="panel">
+  <p class="text-sm  dark:text-white">میزان مجاز بار به کلاس پرواز و کلاس نرخی بلیط بستگی دارد. هنگام خرید آنلاین بلیط هواپیما می‌توانید میزان بار مجاز را در اطلاعات بلیط ببینید. طبیعی است که اگر میزان بارتان بیش از حد مجاز باشد، باید جریمه پرداخت کنید.</p>
+</div>
+
+
+
+
+<button class="brder accordion flex dark:hover:bg-slate-600  dark:text-white"><img class=" quest" src="./media/svgexport-17.png" alt=""> چند روز قبل از پرواز، بلیط هواپیما را بخریم؟ </button>
+<div class="panel">
+  <p class="text-sm  dark:text-white">امکان رزرو بلیط هواپیما از ماه‌ها قبل وجود دارد. اما گاهی اوقات قیمت بلیط هواپیما در روزهای نزدیک به پرواز ارزان‌تر می‌شود. بنابراین در صورتی که شرایطتان اجازه می‌دهد، رزرو آنلاین بلیط هواپیما را به روزهای نزدیک پرواز موکول کنید. البته اگر قصد سفر در ایام پرسفر نظیر تعطیلات را دارید، باید هر چه زودتر رزرو بلیط هواپیما را انجام دهید.</p>
+</div>
+
+
+
+
+<button class="brder accordion flex dark:hover:bg-slate-600  dark:text-white"><img class=" quest" src="./media/svgexport-17.png" alt=""> رزرو آنلاین بلیط هواپیما هزینه بیشتری از خرید حضوری دارد؟</button>
+<div class="panel">
+  <p class="text-sm  dark:text-white">  خیر؛ زمانی که از یک سایت معتبر خرید بلیط هواپیما، اقدام به خرید می‌کنید، نه تنها هزینه بیشتری پرداخت نمی‌کنید، حتی ممکن است تخفیف هم بگیرید. ضمنا با خرید آنلاین بلیط هواپیما از پشتیبانی نیز برخودار هستید.  </p>
+</div>
+
+
+
+
+<button class=" brder accordion flex dark:hover:bg-slate-600  dark:text-white"><img class=" quest" src="./media/svgexport-17.png" alt=""> آیا پس از خرید بلیط هواپیما، امکان تغییر نام یا نام خانوادگی وجود دارد؟</button>
+<div class="panel">
+  <p class="text-sm  dark:text-white"> در پرواز داخلی یا خارجی، امکان تغییر نام و نام خانوادگی در بلیط سیستمی وجود ندارد. اما در بلیط چارتر، برخی از چارترکننده‌ها این تغییر را می‌پذیرند. </p>
+</div>
+
+
+<button class="accordion flex dark:hover:bg-slate-600  dark:text-white"><img class=" quest" src="./media/svgexport-17.png" alt=""> هنگامی که از سایت خرید بلیط هواپیما رزرو بلیط را انجام می‌دهیم، امکان انتخاب صندلی مورد نظرمان وجود دارد؟</button>
+<div class="panel">
+  <p class="text-sm  dark:text-white"> خیر؛ هنگام رزرو بلیط هواپیما داخلی یا خارجی امکان انتخاب صندلی وجود ندارد. البته در زمان چک‌این انتخاب محدوده صندلی امکان‌پذیر است. </p>
+</div>
+
+</div>
+
+
+<div class="md:max-w-[1450px] md:mx-auto text-right my-[20px]">
+<h1 class="md:text-[20px] dark:md:text-white  dark:text-white">بلیط هواپیما</h1>
+</div>
+<div class="md:max-w-[1450px] md:mx-auto md:text-right md:mt-[20px] dark:md:text-white md:mb-[200px]">
+    <div class="md:flex md:flex-row">
+        <img class="md:w-[480px] md:mr-[192px] md:float-left hidden md:block" src="./media/baggage@3x-bda919ec.webp" alt="">
+        <div>
+        <p class="md:text-[#4B5259] dark:md:text-white text-[.875rem]  text-right  dark:text-white">علی‌بابا بزرگترین و معتبرترین سایت خرید اینترنتی بلیط هواپیما ، قطار و اتوبوس در کشور است که از سال ۱۳۹۳ کار خود را شروع کرده و در این مدت توانسته رضایت درصد قابل توجهی از کاربران را به دست بیاورد. در ابتدا، فروش بلیط پرواز داخلی در دستور کار علی‌بابا قرار داشت؛ اما به مرور امکان خرید سایر محصولات گردشگری نیز   به علی‌بابا اضافه شد. </p>
+    <h1 class="md:text-[20px] dark:md:text-white my-[20px] text-right  dark:text-white"> مزایای خرید بلیط هواپیما از علی‌بابا</h1>
+    <p class="md:text-[#4B5259] dark:md:text-white text-[.875rem]  text-right  dark:text-white">شما با خرید بلیط هواپیما از علی‌بابا با سامانه مطمئن و معتبری روبه‌رو هستید که تمام نیازهایتان را پاسخ می‌دهد. برای خرید آنلاین بلیط هواپیما در علی‌بابا کافیست مبدا، مقصد و تاریخ پرواز خود را انتخاب کنید. پس از کلیک روی جستجو، لیست قیمت بلیط هواپیما به مقصد مورد نظر شما ظاهر می‌شود. در این لیست، انتخابهای متعددی پیش روی شماست. برای اینکه گزینه‌ ها را برای خرید بلیط هواپیما محدودتر کنید، علی‌بابا ابزارهای مختلفی در اختیار شما می‌گذارد.</p>
+</div>
+
+    </div>
+    
+    <p class="md:text-[#4B5259] dark:md:text-white text-[.875rem]  text-right  dark:text-white">یکی از ابزارهای بسیار مفید و کاربردی برای خرید اینترنتی بلیط هواپیما، تقویم قیمتی است. با استفاده از تقویم قیمتی شما می‌توانید کمترین و بیشترین قیمت بلیط پرواز را در روزهای قبل و بعد از آن تاریخ مشاهده کنید. در صورتی که اصرار به خرید بلیط هواپیما در یک روز خاص نداشته باشید، این امکان به شما کمک می‌کند تا مبلغ بلیط هواپیما برایتان با مبلغ به صرفه تری تمام شود <br><br>
+
+        علاوه بر این، با استفاده از فیلترهای کنار صفحه می‌توانید ایرلاین مورد نظرتان را انتخاب کنید. ضمنا می‌توانید، بلیط چارتر هواپیما یا سیستمی را فعال کنید تا فقط یکی از این دو نوع بلیط را مشاهده کنید. بلیط هواپیما خارجی ،کلاس پروازی و زمان پرواز هم از دیگر گزینه‌هایی است که با انتخاب آنها، تعداد بلیط ها محدودتر و رزرو بلیط هواپیما برای شما آسانتر می‌شود.
+        <br><br>
+        
+        برای پرداخت هزینه می‌توانید از کارت شتاب استفاده کنید. پس از پرداخت، خرید اینترنتی بلیط هواپیما با موفقیت انجام میشود و بلیط به ایمیل شما ارسال میشود. همچنین در همه این مراحل، پشتیبانی علی‌بابا در کنار شماست تا هر زمانی که سوال یا مشکلی داشتید، 24 ساعته پاسخگوی شما باشد.</p>
+
+        <h1 class="md:text-[20px] dark:md:text-white my-[20px] text-right  dark:text-white"> امکان استرداد بلیط هواپیما</h1>
+        <p class="md:text-[#4B5259] dark:md:text-white text-[.875rem]  text-right  dark:text-white">یکی دیگر از امکانات علی‌بابا استرداد آنلاین بلیط هواپیما (کنسلی بلیط) است. در صورتی که پس از رزرو بلیط هواپیما برنامه سفرتان تغییر کرده، به راحتی می‌توانید طبق قوانین کنسلی پرواز داخلی، بلیط هواپیمای خود را کنسل کنید. پس از استرداد، پول شما در کمترین زمان ممکن به حسابتان برگردانده می‌شود. شما برای خرید اینترنتی بلیط هواپیما از علی‌بابا می‌توانید از تلفن همراه، رایانه شخصی یا تبلت استفاده کنید. علی‌بابا در همه این ابزارها کاربرپسند است و شما خریدی آسان را تجربه خواهید کرد. همچنین امکان نصب و استفاده از اپلیکیشن علی‌بابا برای گوشی های اندروید و آیفون وجود دارد.</p>
+
+        <h1 class="md:text-[20px] dark:md:text-white my-[20px] text-right  dark:text-white"> رزرو بلیط هواپیما از معتبرترین ایرلاین‌ها</h1>
+        <p class="md:text-[#4B5259] dark:md:text-white text-[.875rem]  text-right  dark:text-white">شما برای خرید بلیط هواپیما از بین ایرلاینهای مختلف حق انتخاب دارید و می‌توانید از ایرلاینهای ماهان، زاگرس، کیش ایر، قشم ایر، آسمان، کاسپین، تابان، وارش یا معراج، بلیط پرواز داخلی خود را خریداری کنید   <br><br>
+
+            هر یک از این ایرلاین ها ویژگیها و مشخصات خود را دارند. برخی امکانات و خدمات رفاهی بیشتر دارند و برخی دیگر بلیط هواپیما را با قیمت به صرفه تری ارائه می‌دهند. زمانی که در علی‌بابا لیست بلیط تمام این ایرلاین ها را مشاهده می‌کنید، می‌توانید از بین آنها انتخاب کنید.</p>
+
+        <h1 class="md:text-[20px] dark:md:text-white my-[20px] text-right  dark:text-white"> علی‌بابا: رتبه یک خرید اینترنتی بلیط سفر
+        </h1>
+        <p class="md:text-[#4B5259] dark:md:text-white text-[.875rem]  text-right  dark:text-white">علی‌بابا طی این سالها، اعتبار زیادی نزد مشتریان خود کسب کرده است. طبق نظرسنجی، 97.2 درصد از مشتریان علی‌بابا از خدمات این سامانه راضی بوده‌اند و استفاده از آن را به دوستان و آشنایان خود پیشنهاد داده‌اند. سرعت سادگی خرید اینترنتی بلیط هواپیما، اعتبار و خوشنامی، امکان استرداد آنلاین بلیط هواپیما و پشتیبانی 24 ساعته در تمام روزهای هفته، رتبه یک فروش بلیط را از آنِ علی‌بابا کرده است  <br><br>
+
+            شما با رزرو بلیط هواپیما در علی‌بابا، از سفری راحت و بی‌دردسر مطمئن خواهید بود   </p>
+
+
+        
+</div>
+
+<footer style="border-top:1px solid #E2E6E9; margin-top:60px ;">
+    <div class="foot max-w-[382px]  flex-col md:flex md:max-w-[1450px] md:flex-row md:mx-auto dark:md:text-white my-[12px] py-[24px] md:my-[32px] md:justify-between mx-auto">
+
+        <div class="flex md:flex-row max-w-[382px] ">
+            <img class="md:w-[89px] md:h-[89px] md:self-center md:ml-[8px] w-[64px] h-[64px] ml-[16px]" src="./media/one.webp" alt="">
+            <div class="md:flex md:flex-col md:justify-center">
+                <h2 class="text-2 text-gray-600  dark:text-white">رتبه یک سفر</h2>
+                <p class="dark:md:text-gray-300 my-[5px] text-[#4B5259]  dark:text-white"> معتبرترین عرضه‌کننده محصولات <br class="hidden md:block">گردشگری در ایران</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="flex md:flex-row">
+            <img class="md:w-[89px] md:h-[89px] md:self-center md:ml-[8px] w-[64px] h-[64px] ml-[16px]" src="./media/two.webp" alt="">
+            <div class="md:flex md:flex-col md:justify-center">
+                <h2 class="text-2 text-gray-600  dark:text-white">همسفر هر سفر</h2>
+                <p class="dark:md:text-gray-300 my-[5px] text-[#4B5259]  dark:text-white"> ارائه تمامی خدمات سفر (پرواز، قطار، <br class="hidden md:block"> اتوبوس، هتل و تور)</p>
+            </div>
+
+        </div>
+        <div class="flex md:flex-row">
+            <img class="md:w-[89px] md:h-[89px] md:self-center md:ml-[8px] w-[64px] h-[64px] ml-[16px]" src="./media/three.webp" alt="">
+            <div class="md:flex md:flex-col md:justify-center">
+                <h2 class="text-2 text-gray-600  dark:text-white">  همسفر همه لحظات سفر</h2>
+                <p class="dark:md:text-gray-300 my-[5px] text-[#4B5259]  dark:text-white"> پشتیبانی و همراهی ۲۴ ساعته در تمامی <br class="hidden md:block"> مراحل سفر</p>
+            </div>
+
+        </div>
+
     </div>
 
 
 
 
-<script src="./jsone.js"></script>
+
+    <!-- part two -->
+
+    <div class="acc_foot dark:bg-slate-800 dark:text-white md:max-w-[1450px] md:hidden dark:bg-slate-400 dark:text-white">
+        
+        <button class="accordion_foot flex  dark:hover:bg-slate-600 brder md:hidden flex justify-between dark:text-white">علی‌بابا <img src="./media/arro-down.svg" alt=""></button>
+        <div class="panel2 w-[90%] mx-auto">
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> درباره ما </p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> تماس با ما</p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> چرا علی‌بابا</p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> علی بابا پلاس</p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> بیمه مسافرتی</p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> مجله علی‌بابا</p>
+
+        </div>
+    </div>
+    <div class="acc_foot dark:bg-slate-800 dark:text-white md:max-w-[1450px] md:hidden dark:bg-slate-400 dark:text-white">
+        <button class="accordion_foot flex  dark:hover:bg-slate-600 brder md:hidden flex justify-between dark:text-white">خدمات مشتریان<img src="./media/arro-down.svg" alt=""></button>
+        <div class="panel2 w-[90%] mx-auto">
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> مرکز پشتیبانی آنلاین</p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> راهنمای خرید</p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> راهنمای استرداد </p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> قوانین و مقررات</p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> بیمه مسافرتی</p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259]  dark:text-white"> پرسش و پاسخ</p>
+
+        </div>
+    </div>
+    <div class="acc_foot dark:bg-slate-800 dark:text-white md:max-w-[1450px] md:hidden dark:bg-slate-400 dark:text-white">
+        <button class="accordion_foot flex  dark:hover:bg-slate-600 brder md:hidden flex justify-between  dark:text-white">اطلاعات تکمیلی<img src="./media/arro-down.svg" alt=""></button>
+        <div class="panel2 w-[90%] mx-auto dark:text-white">
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259] dark:text-white">  فروش سازمانی </p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259] dark:text-white">  همکاری با آژانس ها</p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259] dark:text-white"> فرصت های شغلی </p>
+        <p class="dark:md:text-gray-300 my-[15px] text-[#4B5259] dark:text-white"> رضایت و سنجش</p>
+        
+
+        </div>
+    </div>
+
+    <p class="mt-[35px] dark:text-white md:hidden"> بلیط چارتر * تورکیش*توراستانبول-اجاره ملبه جنگلی-بلیط خارجی</p>
+    <p id="p_none" class="hidden dark:text-white">اطلاعات فرودگا‌ه*شیوه‌نامه حقوق مسافر*رزرو هتل*هتل مشهد*هتل کیش*هتل درویشی مشهد*هتل شایگان کیش</p>
+    <button id="bishtar" class="text-blue-500 flex justify-center flex-row-reverse  md:hidden">
+
+
+        <div id="bishone" class="hidden p_none "> کمتر   <img class="self-end px-2" src="./media/arrow-up-blue.svg" alt=""></div>
+
+
+
+         <div id="bishtwo"  class="p_none "> بیشتر     <img class="self-end px-2" src="./media/arrow-down-blue.svg" alt=""></div> </button><br><br>
+
+         <div class="md:hidden flex flex-row-reverse justify-between mt-[25px] w-[90%] mx-auto">
+            <p class="dark:text-white">تلفن پشتیبانی </p>
+            <p class="dark:text-white">09120480837</p>
+         </div>
+
+         <p class="text-center mt-[25px] dark:text-white md:hidden">در شبکه های اجتماعی</p>
+
+    <div class="flex md:max-w-[1450px] md:mx-auto md:py-[32px] md:text-right zahra md:justify-between hidden md:flex">
+        <div class="md:w-[182px] ">
+            <h2 class="md:my-[5px] dark:md:text-white"> علی‌بابا </h2>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]"> درباره ما </p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]"> تماس با ما</p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]"> چرا علی‌بابا</p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]"> علی بابا پلاس</p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]"> بیمه مسافرتی</p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]"> مجله علی‌بابا</p>
+        </div>
+        <div class="md:w-[182px]">
+            <h2 class="md:my-[5px] dark:md:text-white"> خدمات مشتریان </h2>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]"> مرکزپشتبانی آنلاین</p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]">  راهنمایی خرید</p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]"> راهنمایی استرداد </p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]">  قوانین و مقررات </p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]"> پرسش و پاسخ </p>
+        </div>
+        <div class="md:w-[182px] ">
+            <h2 class="md:my-[5px] dark:md:text-white "> اطلاعات تکمیلی</h2>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:ext-[#4B5259]"> فروش سازمانی</p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]">   همکاری با آژانس ها</p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]"> فرصت های شغلی  </p>
+                <p class="dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259]">  سنجش رضایتمندی  </p>
+        </div>
+        <div>
+            <div class="md:w-[552px] negar ">
+                <img class="md:w-[146px] md:mb-[24px]" src="./media/لوگوی علی بابا.svg" alt="">
+                <p class="md:text-left dark:md:text-white">تلفن پشتیبانی: </p>
+                <p class="md:text-left md:my-[5px] dark:md:text-white">دفتر پشتیبانی: اکباتان، نبش اتوبان لشگری، کوی بیمه، خیابان بیمه چهارم، بن‌بست گل‌ها، پلاک 1</p>
+                <div class="flex flex-row md:mt-[50px]">
+                 <div class="saeed md:mr-[15px] dark:md:bg-slate-300">
+                    <img class="md:w-[69px] md:p-[5px] " src="./media/سازمان هواپیمایی کشوری.png" alt="">
+                 </div>
+                 <div class="saeed md:mr-[15px] dark:md:bg-slate-300">
+                    <img  class="md:w-[69px] md:p-[5px]" src="./media/حقوق مسافر.png" alt="">
+                 </div>
+                 <div class="saeed md:mr-[15px] dark:md:bg-slate-300">
+                    <img class="md:w-[69px] md:p-[5px] " src="./media/سازمان هواپیمایی کشوری.png" alt="">
+                 </div>
+                 <div class="saeed md:mr-[15px] dark:md:bg-slate-300">
+                    <img  class="md:w-[69px] md:p-[5px]" src="./media/حقوق مسافر.png" alt="">
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="farah md:flex md:max-w-[1450px] md:mx-auto py-[32px] md:text-right zahra2 md:justify-between">
+        <p class="hidden md:block dark:md:text-gray-300 md:my-[5px] md:text-[#4B5259] md:text-[12px] ">کلیه حقوق این سرویس (وب‌سایت و اپلیکیشن‌های موبایل) محفوظ و متعلق به شرکت سفرهای علی‌بابا می‌باشد. (نسخه 2.61.3)</p>
+        <div class="flex flex-row justify-around md:w-[30%] md:mr-[40px] align-middle">
+            <img class="w-[24px] h-[25px] dark:md:bg-slate-400 self-center dark:bg-white dark:rounded-2xl" src="./media/Aparat logo.png" alt="">
+            <img class="w-[25px] h-[25px] dark:md:bg-slate-400 self-center dark:bg-white dark:rounded-2xl" src="./media/Instagram logo.png" alt="">
+            <img class="w-[25px] md:h-[20px] dark:md:bg-slate-400 self-center dark:bg-white dark:rounded-2xl" src="./media/Telegram logo.png" alt="">
+            <img class="w-[24px] h-[19px] dark:md:bg-slate-400 m-[1px] self-center dark:bg-white dark:rounded-2xl" src="./media/Twitter logo.png" alt="">
+            <img class=" w-[24px] h-[24px] dark:md:bg-slate-400 self-center dark:bg-white dark:rounded-2xl" src="./media/Linkedin logo (1).png" alt="">
+            <img class="w-[24px] h-[24px] dark:md:bg-slate-400 self-center dark:bg-white dark:rounded-2xl" src="./media/youtube logo.png" alt="">
+
+
+
+        </div>
+        <img class="text-center mx-auto my-[32px] w-[100px] md:hidden" src="./media/لوگوی علی بابا.svg" alt="">
+
+    </div>
+    
+</footer>
+
+<div class="fix  h-[52px]   menu_footer md:hidden dark:bg-slate-500 z-40">
+    <div id="mahdi" class="flex flex-col w-[25%] justify-center">
+        <img class="w-[24px] h-[24px] self-center dark:bg-white dark:rounded-2xl" src="./media/1676901893031 (1).png" alt="">
+        
+        <p class="dark:text-white">درباره مهدی</p>
+    </div>
+    <div id="darkbtnn" class="flex flex-col w-[25%] justify-center"> 
+        <img class="w-[24px] h-[24px] self-center dark:bg-white dark:rounded-2xl" src="./media/svgexport-14.svg" alt="">
+       <p class="dark:text-white">دارک مود</p>
+    </div>
+    <div class="flex flex-col w-[25%] justify-center">
+        <img class="w-[24px] h-[24px] self-center dark:bg-white dark:rounded-2xl" src="./media/svgexport-15.svg" alt="">
+        <p class="dark:text-white">سفر های من</p>
+    </div>
+    <div  class="flex flex-col w-[25%] justify-center">
+        <img class="w-[24px] h-[24px] self-center dark:bg-white dark:rounded-2xl" src="./media/svgexport-13.svg" alt="">
+        <p class="dark:text-white">حساب کاربری</p>
+    </div>
+
+</div>
+
+<div class="menu_mobile md:bg-slate-100 md:self-center md:text-center hidden md:block" >
+    <div id="mySidenav" class="sidenav md:bg-slate-400 md:dark:bg-black hidden md:block">
+        <br>
+        <br>
+        
+        <div> <img src="./media/1676901893031 (1).png" alt=""></div>
+        <img class=" md:w-[40px] md:text-center md:dark:bg-black" src="./media/heart2.png" alt="">
+        <br>
+        <span class="text-center">ساخته شده با عشق توسط 
+             مهدی علی نقی زاده </span><br><br>
+        <a href="javascript:void(0)" class="closebtn md:bg-white" onclick="closeNav()" >بستن منو</a><br>
+        <a href="#" class=" mamada md:bg-white" id="darkbtn"> دارک مود</a>
+
+
+      </div>
+      <span class="md:self-center md:align-middle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+</div>
+
+<div id="baner_mahdi" class="w-[70%] h-[60vh] right-[15%] top-[90px] fixed dark:bg-black mahdi_baner p-2 bg-slate-200 md:hidden">
+    <div class="flex flex-col justify-center">
+        <img class="w-[100px] mx-auto mt-[20px]" src="./media/1688458146846.JPEG" alt="">
+        <p class="text-center dark:text-white mt-[50px] p-[10px]">ساخته شده با عشق فراوان توسط مهندس مهدی نقی زاده </p>
+    </div>
+    <div id="close" class="mt-[25px] mx-auto bg-red-700 text-center justify-center align-middle p-1 rounded-lg hover:bg-red-950"><p class=" text-2xl text-white">خب دیگه بسه</p>  </div>
+</div>
+</div>
+
+   <script src="./jquery/dist/jquery.min.js"></script> 
+  <script src="./swiper copy/swiper-bundle.min.js"></script>
+  <script src="./jsone.js">
+   
+  </script>
+  
 </body>
 </html>

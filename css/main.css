@@ -1,237 +1,871 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    
-    
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  transition: 1s;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) { 
+.mobile{
+padding: 0px 16px;
+  }
+span{
+  font-family: Hasanbaba-Regular;
+}
+.menu_mobile{
+  top:2px;
+border-radius: 10px;
+border: 1px solid #bec6cc;
+
+}
+#shekl_two{
+  border-radius: 17px;
+  border: 1px solid #bec6cc;
+}
+.rast{
+  align-items: center;
+  font-weight:900;
+  font-family:Hasanbaba-Bold ;
+}
+.chap{
+  align-items: center;
+  border-right:1px solid #bec6cc ;
+  font-weight:900;
+
+
+}
+.radif_menu_mobile{
+  border-bottom:1px solid #bec6cc; ;
+}
+p{
+  font-family: Hasanbaba-Regular;
+  font-size:.75rem ;
+  color: #4b5259;
+  font-weight: 400;
+}
+h2 {
+  font-family: Hasanbaba-Bold;
+}
+h1 {
+  font-family: Hasanbaba-Bold;
+}
+
+.hasan_sm{
+background-color: #f3f3f3;
+border-radius: 18px;
+padding: 8px;
+}
+.swiper {
+  display: none !important;
+}
+.swiper2 {
+  width: 100%;
+  height: 184px;
+  z-index:1 !important;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+ display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider {
+  margin: 25px auto;
+}
+.baner {
+  direction: rtl;
+  border: 1px solid #bec6cc;
+  border-radius: 10px;
+  font-family: Hasanbaba-Regular;
+  
+}
+
+.btnapp{
+  font-size: .875rem;
+}
+.eybaba{
+  line-height: .7rem;
+}
+.accordion {
+  text-align: right;
+  font-family: Hasanbaba-Regular;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 8px 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+  border-radius: 10px;
+  color: #5c5c5c;
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.08);
+  margin: 15px auto;
+
+}
+.acc {
+  margin: 32px auto;
+  direction: rtl;
+  border-radius: 10px;
+}
+.active{
+
+}
+.panel {
+  direction: rtl;
+  padding: 8px 12px;
+  display: none;
+  overflow: hidden;
+  font-family: Hasanbaba-Regular;
+}
+
+.quest {
+  margin-left: 5px;
+  background-color: #e8f9fc;
+  border-radius: 12px;
+  padding: 5px;
+  width: 25px;
+  height: 35x;
+}
+.scro{
+  overflow: hidden;
+  
+}
+.foot {
+  direction: rtl;
+}
+.foot p{
+  font-size: .75rem;
+}
+.acc_foot{
+  direction: rtl;
+}
+.accordion_foot {
+  text-align: right;
+  font-family: Hasanbaba-Regular;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 8px 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+  border-radius: 10px;
+  color: #0a0a0a;
+  margin: 15px auto;
+
+}
+
+.panel2 {
+  direction: rtl;
+  /* padding: 8px 12px; */
+  display: none;
+  overflow: hidden;
+  font-family: Hasanbaba-Regular;
+}
+#bishtar{
+  float: right;
+  margin: 2px 20px;
+}
+.p_none{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.menu_footer{
+  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, .08), 0 -2px 8px 8px rgba(0, 0, 0, .04);
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 10px;
+  background-color: #ffffff;
+}
+
+@keyframes baner {
+  0%{
+    opacity: 0px;
+  }100%{
+    opacity: 1px;
+  }
+  
+}
+.mahdi_baner{
+border-radius: 25px;
+z-index: 999;
+display: none;
+filter: blur(0px) !important;
+
+  
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {  
 /*********** منوی بالای هواپیما */
-div.pre-header{
-    background-color: rgb(255, 255, 255);
-    direction: rtl;
-    width: 100%;
-    height: 4rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow:  0 2px 5px -1px rgba(0, 0, 0, .08);
-    will-change: transform;
-    transition: transform .2s ease-out;
-    z-index:999;
-
+div.pre-header {
+  background-color: rgb(255, 255, 255);
+  direction: rtl;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.08);
+  will-change: transform;
+  transition: transform 0.2s ease-out;
+  z-index: 999;
 }
 
-div.pre-header>div.main-header{
-    /* align-items: center; */
-    margin: 3px auto;
-    max-width: 1450px;
-    display: flex;
-    justify-content: space-between;   
-    
+div.pre-header > div.main-header {
+  /* align-items: center; */
+  margin: 3px auto;
+  max-width: 1450px;
+  display: flex;
+  justify-content: space-between;
 }
-
 
 /* لوگو و منوی سمت راست  */
-div.pre-header>div.main-header>nav{
-    
-
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-    line-height: 4rem;
-    padding: 0px 10px ;
-    color:rgb(86,92,99) ;
-    
+div.pre-header > div.main-header > nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  line-height: 4rem;
+  padding: 0px 10px;
+  color: rgb(86, 92, 99);
 }
 
-div.pre-header>div.main-header>nav>ul.meun_left{
-    
-    display: flex;
-    line-height: 2rem;
-    margin-right: 25px;
-    /* padding: 10px 5px;  */
-    height: 3rem;
-    
+div.pre-header > div.main-header > nav > ul.meun_left {
+  display: flex;
+  line-height: 2rem;
+  margin-right: 25px;
+  /* padding: 10px 5px;  */
+  height: 3rem;
 }
-div.pre-header>div.main-header>nav>ul.meun_left>li{
-    
-    padding: 4px 16px;
-    list-style: none;
-    height: inherit;
-    position: relative; 
-    display: inline-block; 
-    
-
+div.pre-header > div.main-header > nav > ul.meun_left > li {
+  padding: 4px 16px;
+  list-style: none;
+  height: inherit;
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-div.pre-header>div.main-header>nav>ul.meun_left>li>button.buttom_menu{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    line-height: 3rem;
-    align-items: center;
-    width: 69px;
-    cursor: pointer;
-    border-radius: 15px;
+div.pre-header
+  > div.main-header
+  > nav
+  > ul.meun_left
+  > li
+  > button.buttom_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: rgb(255, 255, 255); */
+  border: none;
+  line-height: 3rem;
+  align-items: center;
+  width: 69px;
+  cursor: pointer;
+  border-radius: 15px;
 }
 
-div.pre-header>div.main-header>nav>ul.meun_left>li>button.buttom_menu:hover{
-    background-color: rgba(245, 242, 242, 0.541);
+div.pre-header
+  > div.main-header
+  > nav
+  > ul.meun_left
+  > li
+  > button.buttom_menu:hover {
+  background-color: rgba(245, 242, 242, 0.541);
 }
 
-div.pre-header>div.main-header>nav>ul.meun_left>li>button.toor{
-    justify-content:center;
-    width: 20px;
+div.pre-header > div.main-header > nav > ul.meun_left > li > button.toor {
+  justify-content: center;
+  width: 20px;
 }
 
-div.pre-header>div.main-header>nav>ul.meun_left>li.khat{
-    border-left: 1px solid rgb(224,224,224);
-    margin-top: 15px;
-    height: 60%;
-    padding: 0px;
+div.pre-header > div.main-header > nav > ul.meun_left > li.khat {
+  border-left: 1px solid rgb(224, 224, 224);
+  margin-top: 15px;
+  height: 60%;
+  padding: 0px;
 }
 
-div.pre-header>div.main-header>nav>ul.meun_left>li>a.buttom_menu>img{
-    padding-right: 7px;
+div.pre-header
+  > div.main-header
+  > nav
+  > ul.meun_left
+  > li
+  > a.buttom_menu
+  > img {
+  padding-right: 7px;
+}
+.ax {
+  padding: 10px;
+}
+.ax > img {
+  align-items: center;
+  padding-top: 3px;
+}
+.mamad {
+  float: right;
+  margin-right: 40px;
 }
 
 /* کد های ابشاری زیر منو  */
 
- div.pre-header>div.main-header>nav>ul.meun_left>li>button.buttom_menu>div{
-    list-style: none;
-    display: none;
-    position: absolute; 
-    min-width:120px; 
-    top: calc(4rem - 5px);
-    text-align: right;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .12), 0 10px 10px -6px rgba(0, 0, 0, .12);
-    line-height: 25px;
-    padding: 0px 10px;
-    background-color: #ffffff; 
-    
-    
-    
-            }
-div.pre-header>div.main-header>nav>ul.meun_left>li>button.buttom_menu>div>li{
-                font-family:Hasanbaba-Regular; 
-                background-color: #ffffff; 
-                color: rgb(109, 108, 108); 
-                padding: 10px; 
-                border-bottom: 1px solid rgb(224,224,224);
-                cursor: pointer;
+div.pre-header
+  > div.main-header
+  > nav
+  > ul.meun_left
+  > li
+  > button.buttom_menu
+  > div {
+  list-style: none;
+  display: none;
+  position: absolute;
+  min-width: 120px;
+  top: calc(4rem - 5px);
+  text-align: right;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.12),
+    0 10px 10px -6px rgba(0, 0, 0, 0.12);
+  line-height: 25px;
+  padding: 0px 10px;
+  background-color: #ffffff;
 }
 
-div.pre-header>div.main-header>nav>ul.meun_left>li>button.buttom_menu>div>li:hover{
-    background-color: rgba(245, 242, 242, 0.541);
+div.pre-header
+  > div.main-header
+  > nav
+  > ul.meun_left
+  > li
+  > button.buttom_menu
+  > div
+  > li {
+  font-family: Hasanbaba-Regular;
+  background-color: #ffffff;
+  color: rgb(109, 108, 108);
+  padding: 10px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  cursor: pointer;
 }
-                
+
+div.pre-header
+  > div.main-header
+  > nav
+  > ul.meun_left
+  > li
+  > button.buttom_menu
+  > div
+  > li:hover {
+  background-color: rgba(245, 242, 242, 0.541);
+}
 
 /* منوی سمت چپ */
 
-
-div.pre-header>div.main-header>ul.meun_left{
-    
-    display: flex;
-    line-height: 2rem;
-    margin-right: 25px;
-    /* padding: 10px 5px;  */
-    height: 3rem;
-     
+div.pre-header > div.main-header > ul.meun_left {
+  display: flex;
+  line-height: 2rem;
+  margin-right: 25px;
+  /* padding: 10px 5px;  */
+  height: 3rem;
 }
 
-
-div.pre-header>div.main-header>ul.meun_left>li{
-    
-    padding: 4px 16px;
-    list-style: none;
-    height: inherit;
-    
-    
-
+div.pre-header > div.main-header > ul.meun_left > li {
+  padding: 4px 16px;
+  list-style: none;
+  height: inherit;
 }
-div.pre-header>div.main-header>ul.meun_left>li>button.buttom_menu{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    line-height: 3rem;
-    align-items: center;
-    cursor: pointer;
-    border-radius: 15px;
+div.pre-header > div.main-header > ul.meun_left > li > button.buttom_menu {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgb(255, 255, 255); */
+  border: none;
+  line-height: 3rem;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px;
 }
-div.pre-header>div.main-header>ul.meun_left>li>button.buttom_menu:hover{
-    background-color: rgba(245, 242, 242, 0.541);
+div.pre-header
+  > div.main-header
+  > ul.meun_left
+  > li
+  > button.buttom_menu:hover {
+  background-color: rgba(245, 242, 242, 0.541);
 }
 
-
-
-
- /* پایان منوی بالای عکس هواپیما */
+/* پایان منوی بالای عکس هواپیما */
 /************ عکس هواپیما  */
 
-div.photo_header{
-    position: relative;
-    background-color: #fff;
-    height: 320px;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    top: 4rem;  
-    
+div.photo_header {
+  position: relative;
+  background-color: #fff;
+  height: 320px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  top: 4rem;
 }
 
-div.photo_header >img{
-    position: relative;
-    display: block;
-    max-width: 100%;
-    object-fit: contain;
-    margin: 0 auto;
-    height: inherit;
-    
+div.photo_header > img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+  height: inherit;
 }
 
 /*قسمت سرچ بار   */
 
-div.search{
-    max-width: 1200px;
-    height: 262px;
-    border: 1px solid rgb(232,232,232);
-    border-radius: 8px;
-    margin: -28px auto;
-    background: #fdfdfd;
-    position: relative;
-    padding-top: 8px;
+div.search {
+  max-width: 1200px;
+  height: 262px;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 8px;
+  margin: -28px auto;
+  background: #fdfdfd;
+  position: relative;
+  padding-top: 8px;
 }
 
-div.search>div.container{
-    margin: 0 auto;
-    width: 100%;
-    border-bottom:1px solid rgb(232,232,232);
+div.search > div.container {
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px solid rgb(232, 232, 232);
 }
-div.search>div.container>div.radif_one{
-    margin: 10px auto;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    padding:2px 35px;
-    
+div.search > div.container > div.radif_one {
+  margin: 10px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  padding: 2px 35px;
 }
 
-div.search>div.container>div.radif_one>div.item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+div.search > div.container > div.radif_one > div.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-div.search>div.container>div.radif_one>div.item>img{
-    align-self: center;
-    width: 36px;
-    color: rgb(255, 255, 255);
+div.search > div.container > div.radif_one > div.item > img {
+  align-self: center;
+  width: 36px;
+  color: rgb(255, 255, 255);
+}
+
+.dropbtn {
+  color: rgb(109, 108, 108);
+  /* padding: 16px; */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: rgba(245, 242, 242, 0.541);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  color: #6d6c6c;
+  width: 100px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  min-width: 120px;
+  top: calc(4rem - 5px);
+  text-align: right;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.12),
+    0 10px 10px -6px rgba(0, 0, 0, 0.12);
+  line-height: 25px;
+  padding: 0px 3px;
+  background-color: #ffffff;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: rgba(245, 242, 242, 0.541);
+}
+
+.show {
+  display: block;
+}
+
+.radif_two {
+  height: 28%;
+}
+
+.radif_three {
+  height: 38%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: Hasanbaba-Regular;
+  padding-top: 8px;
+  padding-bottom: 36px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+.avaly {
+}
+.dovvom {
+  line-height: inherit;
+  text-align: center;
+}
+.sevvom {
+  width: 20%;
+}
+.mabda {
+  border: 1px solid #bec6cc;
+  width: 217px;
+  align-self: center;
+  padding: 10px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.maghsad {
+  border: 1px solid #bec6cc;
+  width: 217px;
+  align-self: center;
+  padding: 10px;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.raft {
+  border: 1px solid #bec6cc;
+  width: 136px;
+  align-self: center;
+  padding: 10px;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.bargasht {
+  border: 1px solid #bec6cc;
+  width: 136px;
+  align-self: center;
+  padding: 10px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.tedad {
+  border: 1px solid #bec6cc;
+  width: 182px;
+  align-self: center;
+  padding: 10px;
+  text-align: end;
+  border-radius: 10px;
+  height: 48px;
+}
+/* bg-[#FDB713] w-[12%] mt-0 hover:bg-[#7b5909] mr-[5px]  h-[48px] */
+.btn-search {
+  background-color: #fdb713;
+  width: 187px;
+  margin-right: 5px;
+  height: 48px;
+  border-radius: 10px;
+  align-self: center;
+  /* margin-top: -12px; */
+}
+.btn-search:hover {
+  background-color: #b88510;
+}
+.hh3 {
+  direction: rtl;
+}
+
+h2 {
+  font-family: Hasanbaba-Bold;
+}
+h1 {
+  font-family: Hasanbaba-Bold;
+}
+.ali {
+  font-family: Hasanbaba-Regular;
+  direction: rtl;
+}
+.hasan {
+  border: 1px solid #bec6cc;
+  border-radius: 10px;
+}
+
+/* silder */
+.swiper2 {
+  display: none !important;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  z-index:1 !important;
+  
+ 
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider {
+  margin: 25px auto;
+}
+.baner {
+  direction: rtl;
+  border: 1px solid #bec6cc;
+  border-radius: 10px;
+  font-family: Hasanbaba-Regular;
+}
+.baner  p{
+  margin-top: -20px;
+  font-size: 17px !important;
+  font-weight: 500px;
+
+}
+
+.accordion {
+  text-align: right;
+  font-family: Hasanbaba-Regular;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 35px 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.active,
+.accordion:hover {
+}
+
+.panel {
+  direction: rtl;
+  padding: 25px 18px;
+  display: none;
+  overflow: hidden;
+  font-family: Hasanbaba-Regular;
+}
+.acc {
+  margin: 32px auto;
+  direction: rtl;
+  border-radius: 10px;
+  border: 1px solid #bec6cc;
+}
+.quest {
+  margin-left: 5px;
+  background-color: #e8f9fc;
+  border-radius: 12px;
+  padding: 5px;
+  width: 25px;
+  height: 35x;
+}
+.brder{
+  
+  border-bottom: 1px solid #bec6cc;
+}
+p {
+  font-family: Hasanbaba-Regular;
+  font-size: .9rem!important;
+}
+
+.foot {
+  direction: rtl;
+}
+.zahra {
+  direction: rtl;
+  border-top: 1px solid #bec6cc;
+}
+.negar {
+  direction: ltr;
+}
+.saeed {
+  border: 1px solid #bec6cc;
+  border-radius: 10px;
+}
+.zahra2{
+  border-top: 1px solid #bec6cc;
+
+}
+
+.farah{
+  direction: rtl;
+}
+
+.menu_mobile{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 5px  solid black;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+
+  
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999 !important;
+  top: 0;
+  left: 0;
+
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  z-index:500;
+
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: relative;
+  font-size: 36px;
+  margin-left: 50px;
+  z-index:750;
+
+}
+
+
+.sidenav .mamada {
+  position: relative;
+  font-size: 36px;
+  margin-left: 50px;
+  z-index:998;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+span{
+  font-family: Hasanbaba-Regular;
+}
+
+
+
+
+
+
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: rgb(0, 0, 0);
+outline: 1px solid rgb(0, 0, 0);
+}
+}
+
+
+.hh3 {
+  direction: rtl;
 }
